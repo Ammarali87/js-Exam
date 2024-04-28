@@ -1,0 +1,159 @@
+
+body {
+	background-color: rgb(10, 10, 10) ;
+	font-family:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    overflow: hidden;
+}
+   
+    img {
+		width: 100%;
+		display: block;
+	}
+
+ .sidebar{
+	position: fixed;
+	display: flex;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgb(243, 238, 238);
+	z-index: 11111;
+ }
+ .side-icon {
+	background-color: rgb(10, 10, 10) ;
+	padding: 22px;
+}
+   .list{
+	display: flex;
+	flex-direction: column;
+   }
+ .two img {
+      width: 88px;
+	padding: 5px;
+	margin-top: 22px;
+  } 
+    .ll {
+		transform: translateY(453px);
+	  color: whitesmoke;   
+	}
+   a{
+	cursor: pointer;
+	text-decoration: none;
+	color: whitesmoke;
+	font-size: 21px;
+	letter-spacing: .8px;
+	margin: 7px;
+   }
+
+  .search input {
+	background-color: rgb(22, 22, 22);
+	color: rgb(206, 20, 20);
+	border-radius: 55px;
+	height: 42px;
+  }
+  .search input::placeholder{
+	color: rgb(245, 241, 241);
+  }
+    
+     p {
+		font-size: larger;
+		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	 }
+     i{
+		cursor: pointer;
+	 }
+        .flow-text {
+			 position: absolute;
+			 font-weight: 600;
+              height: 0;
+			  top: 0 ;
+			  opacity: 0;
+			  display: flex;
+			  align-items: center;
+			  bottom: 0;
+			 background-color: aliceblue;
+			 transition: 1s ease;
+		}
+      .overlay:hover .flow-text  {
+			 height: 100%;
+			 opacity: 1;
+          	 background-color: aliceblue;
+			 top: 0;
+			 bottom: 0;
+			 left: 0;
+			 right: 0;
+		}
+   
+
+   .loader {
+	position: fixed;
+	background-color: rgb(41, 36, 46);
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 333333;
+ 	width: 100%;
+ 	height: 100%;
+	text-align: center;
+	font-size: 22px;
+  }
+  
+  .loader > div {
+	background-color: #e2e0e0;
+	height: 20%;
+      margin-top: 20%;
+	width: 6px;
+	display: inline-block;
+	
+	-webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+	animation: sk-stretchdelay 1.2s infinite ease-in-out;
+  }
+  
+  .loader .rect2 {
+	-webkit-animation-delay: -1.1s;
+	animation-delay: -1.1s;
+  }
+  
+  .loader .rect3 {
+	-webkit-animation-delay: -1.0s;
+	animation-delay: -1.0s;
+  }
+  
+  .loader .rect4 {
+	-webkit-animation-delay: -0.9s;
+	animation-delay: -0.9s;
+  }
+  
+  .loader .rect5 {
+	-webkit-animation-delay: -0.8s;
+	animation-delay: -0.8s;
+  }
+  
+  @-webkit-keyframes sk-stretchdelay {
+	0%, 40%, 100% { -webkit-transform: scaleY(0.4) }  
+	20% { -webkit-transform: scaleY(1.0) }
+  }
+  
+  @keyframes sk-stretchdelay {
+	0%, 40%, 100% { 
+	  transform: scaleY(0.4);
+	  -webkit-transform: scaleY(0.4);
+	}  20% { 
+	  transform: scaleY(1.0);
+	  -webkit-transform: scaleY(1.0);
+	}
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
